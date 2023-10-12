@@ -7,7 +7,7 @@ const Applayout = () => {
   const navigation = useNavigation();
   const isloading = navigation.state === "loading";
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] h-screen">
+    <div className="grid grid-rows-[auto_1fr_auto] h-screen relative mb-8">
       {isloading && <Loader />}
       <Header />
       <main>
